@@ -1,0 +1,4 @@
+split,pairs,users_with_pairs,avg_pairs_per_user,median_pairs_per_user,min_pairs_per_user,max_pairs_per_user
+train,5692244,4722,1205.47,1277.5,18,2000
+validation,478099,4159,114.96,25.0,1,6620
+test,507550,4164,121.89,27.0,1,6954

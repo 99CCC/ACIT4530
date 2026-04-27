@@ -1,0 +1,4 @@
+group,n_users,pairs_share
+top 1% users,47,0.205
+top 5% users,236,0.4991
+top 10% users,473,0.6722

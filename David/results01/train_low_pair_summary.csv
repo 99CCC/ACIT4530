@@ -1,0 +1,9 @@
+threshold,group,count,share_users
+0,users with == 0 pairs,3,0.0006
+5,users with < 5 pairs,3,0.0006
+10,users with < 10 pairs,4,0.0008
+20,users with < 20 pairs,5,0.0011
+50,users with < 50 pairs,28,0.0059
+100,users with < 100 pairs,149,0.0315
+200,users with < 200 pairs,569,0.1204
+500,users with < 500 pairs,1437,0.3041

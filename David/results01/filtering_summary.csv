@@ -1,0 +1,2 @@
+min_user_ratings,min_movie_ratings,ratings_kept,users_kept,movies_kept,share_ratings_kept,share_users_kept,share_movies_kept,avg_ratings_per_user,median_ratings_per_user,avg_ratings_per_movie,median_ratings_per_movie
+40,10,960916,4726,3250,0.9607,0.7825,0.877,203.33,129.0,295.67,158.0
