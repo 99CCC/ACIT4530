@@ -1,9 +1,0 @@
-{
-  "embedding_dim": 64,
-  "use_bias": true,
-  "batch_size": 16384,
-  "learning_rate": 0.001,
-  "weight_decay": 1e-05,
-  "max_epochs": 30,
-  "patience": 5
-}

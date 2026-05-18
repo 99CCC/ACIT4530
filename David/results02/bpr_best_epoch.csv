@@ -1,2 +1,0 @@
-epoch,train_loss,val_loss,val_micro_pair_accuracy,val_macro_user_accuracy,val_median_user_accuracy,val_min_user_accuracy,val_users_evaluated,val_pairs_evaluated
-4.0,0.20904953570015217,0.4147565509703346,0.8050295127777151,0.759371166567663,0.8076923076923077,0.0,4158.0,478098.0

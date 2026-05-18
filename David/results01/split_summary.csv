@@ -1,4 +1,0 @@
-split,rows,users,movies,share_rows
-train,759509,4726,3250,0.7904
-validation,100817,4726,3204,0.1049
-test,100590,4726,3226,0.1047

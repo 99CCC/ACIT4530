@@ -1,2 +1,0 @@
-split,loss,micro_pair_accuracy,macro_user_accuracy,median_user_accuracy,min_user_accuracy,users_evaluated,pairs_evaluated
-test,0.4040244032443891,0.8140124125701901,0.7719547998904066,0.8146654719235364,0.0,4164,507550
