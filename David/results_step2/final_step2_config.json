@@ -1,0 +1,20 @@
+{
+  "experiment": "current_best_after_pair_sampling_gap2_random_cap_dim64_lr3em04_reg1em04_bs8192_bias",
+  "embedding_dim": 64,
+  "learning_rate": 0.0003,
+  "reg_lambda": 0.0001,
+  "batch_size": 8192,
+  "init_std": 0.01,
+  "use_item_bias": true,
+  "show_progress": true,
+  "pair_sampling_scheme": "gap2_random_cap",
+  "pair_min_diff": 2,
+  "sampling_strategy": "random_cap",
+  "final_experiment_name": "pair_sampling_gap2_random_cap_dim64_lr3em04_reg1em04_bs8192_bias",
+  "selection_metric": "validation_macro_accuracy_best",
+  "test_used_for_selection": false,
+  "n_users": 4722,
+  "n_items": 3250,
+  "user_embedding_file": "user_embeddings_p_u.npy",
+  "item_embedding_file": "item_embeddings_q_i.npy"
+}
