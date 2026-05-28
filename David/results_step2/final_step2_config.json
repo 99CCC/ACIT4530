@@ -16,5 +16,11 @@
   "n_users": 4722,
   "n_items": 3250,
   "user_embedding_file": "user_embeddings_p_u.npy",
-  "item_embedding_file": "item_embeddings_q_i.npy"
+  "item_embedding_file": "item_embeddings_q_i.npy",
+  "final_train_pairs_file": "final_train_pairs_used_by_bpr.parquet",
+  "final_train_pairs_summary_file": "final_train_pairs_used_by_bpr_summary.parquet",
+  "final_train_pairs_info_file": "final_train_pairs_used_by_bpr_info.json",
+  "pair_sampling_source": "generate_from_train_df",
+  "min_pairs_per_user": 10,
+  "max_pairs_per_user": 2000
 }

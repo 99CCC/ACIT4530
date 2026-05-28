@@ -1,0 +1,14 @@
+{
+  "artifact": "final_train_pairs_used_by_bpr.parquet",
+  "summary_artifact": "final_train_pairs_used_by_bpr_summary.parquet",
+  "source": "Step 2 pair_sampling_objects",
+  "purpose": "Exact indexed pairwise training table corresponding to the final selected BPR experiment. This avoids ambiguity with the original Step 1 train_pairs.parquet.",
+  "final_pair_sampling_scheme": "gap2_random_cap",
+  "sampling_strategy": "random_cap",
+  "pair_min_diff": 2,
+  "min_pairs_per_user": 10,
+  "max_pairs_per_user": 2000,
+  "pairs": 5692244,
+  "users": 4722,
+  "items": 3250
+}
