@@ -1,0 +1,4 @@
+{
+  "diagnostic_type": "full_pairwise_distance_distribution",
+  "description": "Distance diagnostics were computed using all available embeddings for each candidate user/item/joint space. This avoids sampling noise before selecting preprocessing, distance metric, and DBSCAN parameters."
+}

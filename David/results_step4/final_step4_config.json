@@ -1,0 +1,38 @@
+{
+  "random_seed": 42,
+  "train_direction_policy": "random_swap",
+  "validation_test_direction_policy": "symmetric",
+  "label_definition": "label=1 if first_item is preferred over second_item",
+  "mf_baseline": "sigmoid(p_u dot (q_first - q_second) + bias_first - bias_second)",
+  "bayesian_model": "CategoricalNB",
+  "bayesian_feature_group_selected": "interaction",
+  "bayesian_n_bins": 8,
+  "bayesian_bin_strategy": "quantile",
+  "bayesian_alpha": 1.0,
+  "bayesian_discretizer_fit_sample_n": 300000,
+  "bayesian_selection_metric": "validation_accuracy",
+  "knn_model": "user_neighborhood_distance_weighted_vote",
+  "knn_metric": "cosine",
+  "knn_k_candidates": [
+    5,
+    10,
+    20,
+    50
+  ],
+  "knn_selected_k": 10,
+  "knn_selection_metric": "validation_accuracy",
+  "dbscan_used_in_step4": false,
+  "saved_files": {
+    "config": "final_step4_config.json",
+    "validation_evaluation": "final_step4_validation_evaluation.parquet",
+    "test_evaluation": "final_step4_test_evaluation.parquet",
+    "bayesian_feature_ablation": "final_step4_bayesian_feature_ablation.parquet",
+    "knn_validation_ablation": "final_step4_knn_validation_ablation.parquet",
+    "user_macro_comparison": "final_step4_user_macro_comparison.parquet",
+    "user_segment_comparison": "final_step4_user_segment_comparison.parquet",
+    "calibration_comparison": "final_step4_calibration_comparison.parquet",
+    "test_predictions": "final_step4_test_predictions.parquet",
+    "bayesian_model": "final_step4_categorical_nb.joblib",
+    "knn_neighbors": "final_step4_user_knn_neighbors.npz"
+  }
+}
