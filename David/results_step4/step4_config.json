@@ -1,0 +1,84 @@
+{
+  "random_seed": 42,
+  "input_artifacts": {
+    "step1_dir": "results_step1",
+    "step2_dir": "results_step2",
+    "train_pairs": "train_pairs.parquet",
+    "validation_pairs": "validation_pairs.parquet",
+    "test_pairs": "test_pairs.parquet",
+    "user_embeddings": "user_embeddings_p_u.npy",
+    "item_embeddings": "item_embeddings_q_i.npy",
+    "item_bias": "item_bias.npy"
+  },
+  "evaluation": {
+    "validation_pairs": 478098,
+    "test_pairs": 507550,
+    "metric_used_for_selection": "validation_macro_user_accuracy",
+    "accuracy_definition": "original pair is correct if predicted P(pos_item > neg_item) > 0.5",
+    "probabilistic_metrics": "AUC, Brier score, and log loss are computed using symmetric directional rows"
+  },
+  "mf_baseline": {
+    "score_formula": "p_u dot (q_pos - q_neg) + bias_pos - bias_neg",
+    "uses_full_validation": true,
+    "uses_full_test": true
+  },
+  "bayesian": {
+    "model": "CategoricalNB",
+    "discretizer": "KBinsDiscretizer",
+    "train_direction_policy": "random_swap",
+    "feature_sets_tested": [
+      "user_vector",
+      "item_vectors",
+      "item_difference"
+    ],
+    "n_bins_candidates": [
+      5,
+      10,
+      20
+    ],
+    "alpha_candidates": [
+      0.5,
+      1.0
+    ],
+    "bin_strategy": "quantile",
+    "discretizer_fit_sample_n": 300000,
+    "batch_size": 250000,
+    "selected_feature_set": "item_vectors",
+    "selected_n_bins": 20,
+    "selected_alpha": 1.0
+  },
+  "knn": {
+    "model": "UserKNN",
+    "neighbor_space": "user_embeddings",
+    "metric": "cosine",
+    "k_candidates": [
+      5,
+      10,
+      20,
+      50
+    ],
+    "weighting_candidates": [
+      "uniform",
+      "distance"
+    ],
+    "selected_k": 20,
+    "selected_weighting": "distance",
+    "batch_size": 10000,
+    "weight_epsilon": 1e-06
+  },
+  "saved_files": [
+    "bayes_feature_summary.parquet",
+    "bayes_validation_results.parquet",
+    "bayes_vs_mf_calibration.parquet",
+    "best_bayesian_categorical_nb.joblib",
+    "best_user_knn_neighbor_distances.npy",
+    "best_user_knn_neighbor_indices.npy",
+    "calibration_comparison.parquet",
+    "compact_model_comparison.parquet",
+    "final_model_comparison.parquet",
+    "knn_validation_results.parquet",
+    "knn_vs_mf_evidence.parquet",
+    "step4_config.json",
+    "step4_selection_summary.parquet"
+  ]
+}
