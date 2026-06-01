@@ -1,0 +1,15 @@
+{
+  "dataset": "MovieLens 1M",
+  "min_user_ratings": 40,
+  "min_movie_ratings": 10,
+  "pair_min_diff": 2,
+  "train_min_pairs_per_user": 10,
+  "train_max_pairs_per_user": 2000,
+  "pair_sampling": "proportional_stratified_by_rating_diff_with_user_cap",
+  "random_seed": 42,
+  "split_strategy": "per_user_temporal_split_with_same_timestamp_groups_preserved",
+  "validation_ratio": 0.1,
+  "test_ratio": 0.1,
+  "validation_test_pair_filtering": "restricted_to_train_pair_users_and_train_pair_items",
+  "ranking_evaluation_note": "Use model-universe interaction splits for ranking metrics"
+}

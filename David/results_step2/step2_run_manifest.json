@@ -1,0 +1,29 @@
+{
+  "python_version": "3.11.5",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "torch_version": "2.11.0+cu128",
+  "pandas_version": "3.0.1",
+  "numpy_version": "2.4.4",
+  "sklearn_version": "1.8.0",
+  "device": "cuda",
+  "cuda_available": true,
+  "random_seed": 42,
+  "n_users": 4722,
+  "n_items": 3250,
+  "user_embedding_shape": [
+    4722,
+    64
+  ],
+  "item_embedding_shape": [
+    3250,
+    64
+  ],
+  "item_bias_shape": [
+    3250
+  ],
+  "final_experiment_name": "pair_sampling_current_step1_gap2_stratified_cap_dim64_lr3em04_reg1em04_bs8192_bias",
+  "final_export_pair_sampling_scheme": "current_step1_gap2_stratified_cap",
+  "step1_documented_pair_policy": "proportional_stratified_by_rating_diff_with_user_cap",
+  "ablation_best_pair_sampling_scheme": "gap2_random_cap",
+  "ablation_winner_used_for_final_export": false
+}

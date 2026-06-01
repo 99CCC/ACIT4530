@@ -1,0 +1,12 @@
+parameter,selected_value,reason
+model,BPR matrix factorization,Pairwise objective directly models preferred-item-over-less-preferred-item comparisons.
+embedding_dim,64,Selected using validation macro pairwise accuracy during the embedding-dimension sweep.
+learning_rate,0.0003,Selected using validation macro pairwise accuracy during the learning-rate sweep.
+reg_lambda,0.0001,Selected using validation macro pairwise accuracy during the regularization sweep.
+batch_size,8192,Selected as the fastest batch size within tolerance of the best validation macro accuracy.
+use_item_bias,True,Item bias models item-level popularity effects and is saved with the final item embeddings.
+final_export_pair_sampling_scheme,current_step1_gap2_stratified_cap,Fixed to the Step 1 final pair policy so downstream embeddings remain pipeline-consistent.
+step1_documented_pair_policy,proportional_stratified_by_rating_diff_with_user_cap,This is the pair construction policy documented and exported by Step 1.
+ablation_best_pair_sampling_scheme,gap2_random_cap,Best pair-sampling variant in Step 2 sensitivity analysis; reported but not used for final export.
+ablation_winner_used_for_final_export,False,False. The ablation winner does not override the documented Step 1 final pair policy.
+test_used_for_selection,False,False. Test data is used only for final evaluation.

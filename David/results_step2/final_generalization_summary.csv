@@ -1,0 +1,8 @@
+metric,value
+train_macro_accuracy,0.9483213143344372
+validation_macro_accuracy,0.7576079589130686
+test_macro_accuracy,0.7741385257326419
+train_minus_validation_macro_gap,0.19071335542136858
+validation_minus_test_macro_gap,-0.01653056681957321
+validation_auc,0.8960241612059001
+test_auc,0.903074113511336

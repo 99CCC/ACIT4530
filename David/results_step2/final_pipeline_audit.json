@@ -1,0 +1,30 @@
+{
+  "final_export_pair_sampling_scheme": "current_step1_gap2_stratified_cap",
+  "step1_documented_pair_policy": "proportional_stratified_by_rating_diff_with_user_cap",
+  "final_export_pair_sampling_source": "existing_step1_pairs",
+  "final_export_sampling_strategy": "stratified_cap",
+  "ablation_best_pair_sampling_scheme": "gap2_random_cap",
+  "ablation_best_experiment_name": "pair_sampling_gap2_random_cap_dim64_lr3em04_reg1em04_bs8192_bias",
+  "ablation_winner_used_for_final_export": false,
+  "same_as_loaded_step1_train_pairs": true,
+  "final_train_pairs_count": 5692244,
+  "final_train_users_count": 4722,
+  "final_train_items_count": 3250,
+  "semantic_duplicates": 0,
+  "same_pos_neg_items": 0,
+  "min_rating_diff": 2,
+  "pair_min_diff": 2,
+  "all_rating_diff_ge_pair_min_diff": true,
+  "final_user_embedding_shape": [
+    4722,
+    64
+  ],
+  "final_item_embedding_shape": [
+    3250,
+    64
+  ],
+  "item_bias_shape": [
+    3250
+  ],
+  "note": "Pair-sampling ablation is retained as Step 2 analysis. The final exported embeddings are tied to the documented Step 1 final pair policy and are not automatically replaced by the ablation winner."
+}
