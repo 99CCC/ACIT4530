@@ -1,0 +1,2 @@
+run_key,space_name,dimensions,preprocessing,metric,min_samples,eps_percentile,eps,n_points,n_clusters,noise_count,noise_share,clustered_count,clustered_share,largest_cluster_size,largest_cluster_share_all,largest_cluster_share_clustered,smallest_cluster_size,median_cluster_size,mean_cluster_size
+user_run_0841,user_standardized_l2_cosine,64,standardized_l2,cosine,128,15.0,0.462779,4722,2,1911,0.40470139771283353,2811,0.5952986022871665,1532,0.32443879711986445,0.5450017787264319,1279,1405.5,1405.5

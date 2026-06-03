@@ -1,0 +1,22 @@
+{
+  "step": "Step 3: DBSCAN in embedding space",
+  "selected_user_run_key": "user_run_0841",
+  "entity_clustered_for_downstream": "users",
+  "embedding_source": "Step 2 BPR user embeddings p_u",
+  "space_name": "user_standardized_l2_cosine",
+  "preprocessing": "standardized_l2",
+  "metric": "cosine",
+  "dimensions": 64,
+  "eps": 0.462779,
+  "min_samples": 128,
+  "eps_percentile": 15.0,
+  "n_users": 4722,
+  "n_non_noise_clusters": 2,
+  "noise_users": 1911,
+  "noise_share": 0.40470139771283353,
+  "clustered_users": 2811,
+  "clustered_share": 0.5952986022871665,
+  "item_dbscan_final_labels_saved": false,
+  "item_dbscan_final_labels_reason": "User DBSCAN is selected as the final downstream clustering artifact because Step 5 forms homogeneous and diverse groups of users. Item DBSCAN was explored but is not required for group formation.",
+  "random_seed": 42
+}

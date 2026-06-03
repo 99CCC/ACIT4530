@@ -1,0 +1,2 @@
+selected_run_key,space_name,preprocessing,metric,eps,min_samples,eps_percentile,n_users,n_non_noise_clusters,noise_users,noise_share,clustered_users,clustered_share
+user_run_0841,user_standardized_l2_cosine,standardized_l2,cosine,0.462779,128,15.0,4722,2,1911,0.40470139771283353,2811,0.5952986022871665

@@ -1,0 +1,4 @@
+user_cluster,user_cluster_label,is_noise,users,share_users
+0,cluster_0,False,1279,0.270859805167302
+1,cluster_1,False,1532,0.32443879711986445
+-1,noise,True,1911,0.40470139771283353
