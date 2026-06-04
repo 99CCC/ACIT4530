@@ -1,0 +1,10 @@
+{
+  "k": 50,
+  "weighting": "uniform",
+  "metric": "cosine",
+  "neighbor_space": "centered_train_rating_vectors",
+  "score_definition": "user mean plus weighted average of neighbors' centered train ratings, with item-mean fallback",
+  "uses_mf_scores": false,
+  "uses_mf_embeddings": false,
+  "uses_dbscan": false
+}

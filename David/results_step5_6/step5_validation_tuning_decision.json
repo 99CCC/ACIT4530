@@ -1,0 +1,30 @@
+{
+  "top_k": 10,
+  "lambda_grid": [
+    0.0,
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "alpha_grid": [
+    0.0,
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "average_validation_ndcg_10": 0.05701876755002145,
+  "average_validation_jain": 0.15056758572173504,
+  "average_validation_zero_satisfaction_share": 0.845,
+  "average_validation_worst_member_satisfaction": 0.0015120191524692545,
+  "nash_validation_ndcg_10": 0.0566432072477378,
+  "selected_lambda_std": 0.0,
+  "lambda_selection_rule": "fairness-first: max Jain fairness and lower zero-satisfaction subject to validation NDCG within 10% of average aggregation",
+  "selected_alpha_minority": 2.0,
+  "alpha_selection_rule": "minority-first: max minority-cluster satisfaction and lower minority zero-rate subject to validation NDCG within 10% of Nash",
+  "normalization": "per-member min-max normalization before group aggregation",
+  "dbscan_minority_nash": "normalized Nash score + alpha * normalized minority score + 0.25 * alpha * normalized worst-member score"
+}

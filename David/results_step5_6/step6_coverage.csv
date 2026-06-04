@@ -1,0 +1,16 @@
+score_source,aggregation,method,unique_recommended_items,catalog_coverage
+rating_user_knn,dbscan_minority_nash,rating_user_knn_dbscan_minority_nash,501,0.15415384615384614
+rating_user_knn,average,rating_user_knn_average,463,0.14246153846153847
+rating_user_knn,tuned_fairness,rating_user_knn_tuned_fairness,463,0.14246153846153847
+rating_user_knn,nash_welfare,rating_user_knn_nash_welfare,460,0.14153846153846153
+rating_user_knn,least_misery,rating_user_knn_least_misery,390,0.12
+mf,least_misery,mf_least_misery,338,0.104
+hybrid_mf_bayes,least_misery,hybrid_mf_bayes_least_misery,285,0.0876923076923077
+mf,dbscan_minority_nash,mf_dbscan_minority_nash,274,0.0843076923076923
+mf,nash_welfare,mf_nash_welfare,251,0.07723076923076923
+hybrid_mf_bayes,dbscan_minority_nash,hybrid_mf_bayes_dbscan_minority_nash,246,0.0756923076923077
+hybrid_mf_bayes,nash_welfare,hybrid_mf_bayes_nash_welfare,239,0.07353846153846154
+mf,average,mf_average,224,0.06892307692307692
+mf,tuned_fairness,mf_tuned_fairness,224,0.06892307692307692
+hybrid_mf_bayes,tuned_fairness,hybrid_mf_bayes_tuned_fairness,211,0.06492307692307692
+hybrid_mf_bayes,average,hybrid_mf_bayes_average,211,0.06492307692307692

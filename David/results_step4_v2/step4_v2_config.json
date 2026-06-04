@@ -1,0 +1,54 @@
+{
+  "random_seed": 42,
+  "train_pair_sample_n": 300000,
+  "train_eval_sample_n": 300000,
+  "bayes_feature_sets": [
+    "user_vector",
+    "item_vectors",
+    "item_difference",
+    "user_item_interactions",
+    "personalized_difference",
+    "full_embedding_features"
+  ],
+  "bayes_n_bins_options": [
+    8,
+    16
+  ],
+  "bayes_strategy_options": [
+    "quantile",
+    "uniform"
+  ],
+  "bayes_alpha_options": [
+    0.1,
+    1.0
+  ],
+  "best_bayesian": {
+    "feature_set": "user_item_interactions",
+    "n_bins": 16,
+    "strategy": "quantile",
+    "alpha": 0.1
+  },
+  "best_knn": {
+    "k": 50,
+    "weighting": "uniform",
+    "metric": "cosine",
+    "neighbor_space": "centered_train_rating_vectors",
+    "score_definition": "user mean plus weighted average of neighbors' centered train ratings, with item-mean fallback",
+    "uses_mf_scores": false,
+    "uses_mf_embeddings": false,
+    "uses_dbscan": false
+  },
+  "score_sources": {
+    "mf_score": "p_u dot q_i plus item_bias_i",
+    "bayesian_score": "borda tournament aggregation of bayesian pairwise probabilities within candidate pool",
+    "knn_score": "independent rating-based user-kNN over centered train ratings",
+    "hybrid_ready": true,
+    "dbscan_used": false,
+    "bayesian_feature_set": "user_item_interactions",
+    "bayesian_n_bins": 16,
+    "bayesian_strategy": "quantile",
+    "bayesian_alpha": 0.1,
+    "knn_k": 50,
+    "knn_weighting": "uniform"
+  }
+}

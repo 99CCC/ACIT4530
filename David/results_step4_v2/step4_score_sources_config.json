@@ -1,0 +1,13 @@
+{
+  "mf_score": "p_u dot q_i plus item_bias_i",
+  "bayesian_score": "borda tournament aggregation of bayesian pairwise probabilities within candidate pool",
+  "knn_score": "independent rating-based user-kNN over centered train ratings",
+  "hybrid_ready": true,
+  "dbscan_used": false,
+  "bayesian_feature_set": "user_item_interactions",
+  "bayesian_n_bins": 16,
+  "bayesian_strategy": "quantile",
+  "bayesian_alpha": 0.1,
+  "knn_k": 50,
+  "knn_weighting": "uniform"
+}
